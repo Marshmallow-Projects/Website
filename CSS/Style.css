@@ -1,0 +1,264 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+/* -------------------------------------Marshmallow.Projects------------------------------------- */
+
+/* Navbar container */
+.navbar-container {
+    background-color: white;
+    padding: 20px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+/* Logo */
+.navbar .logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+/* Button */
+.navbar .button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #00aaff, #005f87);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navbar .button:hover {
+    background: linear-gradient(90deg, #005f87, #00aaff);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+  
+
+/* -------------------------------------Marshmallow.Projects------------------------------------- */
+
+/* Opening Section */
+.hero-section {
+    background-color: #001f3f; /* Dark blue */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------Marshmallow.Projects------------------------------------- */
+
+/* Footer */
+footer {
+    border-top: 3.5px solid lightblue;
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-left img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-links {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007BFF;
+}
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.8);
+}
+
+.follow-text {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-bottom {
+    background-color: #333;
+    height: 30px;
+    font-size: 14px;
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gradient-border-btn {
+    position: relative;
+    padding: 12px 30px;
+    color: white;
+    background: #001f3f;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gradient-border-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(270deg, #00f2fe, #6aab15, #bcc9ca);
+    background-size: 600% 600%;
+    border-radius: 8px;
+    z-index: -1;
+    animation: moveGradient 4s linear infinite;
+}
+
+.gradient-border-btn::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #001f3f;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
